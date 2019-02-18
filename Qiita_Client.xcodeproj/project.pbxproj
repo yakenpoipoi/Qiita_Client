@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		84D5894B221A82E000365EEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5894A221A82E000365EEC /* AppDelegate.swift */; };
-		84D5894D221A82E000365EEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5894C221A82E000365EEC /* ViewController.swift */; };
 		84D58950221A82E000365EEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D5894E221A82E000365EEC /* Main.storyboard */; };
 		84D58952221A82E200365EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D58951221A82E200365EEC /* Assets.xcassets */; };
 		84D58955221A82E200365EEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D58953221A82E200365EEC /* LaunchScreen.storyboard */; };
 		84D58960221A82E200365EEC /* Qiita_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5895F221A82E200365EEC /* Qiita_ClientTests.swift */; };
 		84D5896B221A82E200365EEC /* Qiita_ClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5896A221A82E200365EEC /* Qiita_ClientUITests.swift */; };
+		84D5897F221A941500365EEC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D5897D221A941500365EEC /* Alamofire.framework */; };
+		84D58980221A941500365EEC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D5897E221A941500365EEC /* SwiftyJSON.framework */; };
+		84D58983221A9B1400365EEC /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D58982221A9B1400365EEC /* ArticleListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		84D58947221A82E000365EEC /* Qiita_Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiita_Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D5894A221A82E000365EEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84D5894C221A82E000365EEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84D5894F221A82E000365EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84D58951221A82E200365EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84D58954221A82E200365EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,11 @@
 		84D58966221A82E200365EEC /* Qiita_ClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Qiita_ClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D5896A221A82E200365EEC /* Qiita_ClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qiita_ClientUITests.swift; sourceTree = "<group>"; };
 		84D5896C221A82E200365EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D58979221A914200365EEC /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../../Podfile; sourceTree = "<group>"; };
+		84D5897B221A93DD00365EEC /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		84D5897D221A941500365EEC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		84D5897E221A941500365EEC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		84D58982221A9B1400365EEC /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D5897F221A941500365EEC /* Alamofire.framework in Frameworks */,
+				84D58980221A941500365EEC /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,7 @@
 				84D5895E221A82E200365EEC /* Qiita_ClientTests */,
 				84D58969221A82E200365EEC /* Qiita_ClientUITests */,
 				84D58948221A82E000365EEC /* Products */,
+				84D58978221A914100365EEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +107,11 @@
 			isa = PBXGroup;
 			children = (
 				84D5894A221A82E000365EEC /* AppDelegate.swift */,
-				84D5894C221A82E000365EEC /* ViewController.swift */,
 				84D5894E221A82E000365EEC /* Main.storyboard */,
 				84D58951221A82E200365EEC /* Assets.xcassets */,
 				84D58953221A82E200365EEC /* LaunchScreen.storyboard */,
 				84D58956221A82E200365EEC /* Info.plist */,
+				84D58982221A9B1400365EEC /* ArticleListViewController.swift */,
 			);
 			path = Qiita_Client;
 			sourceTree = "<group>";
@@ -125,6 +134,17 @@
 			path = Qiita_ClientUITests;
 			sourceTree = "<group>";
 		};
+		84D58978221A914100365EEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84D5897D221A941500365EEC /* Alamofire.framework */,
+				84D5897E221A941500365EEC /* SwiftyJSON.framework */,
+				84D5897B221A93DD00365EEC /* Cartfile */,
+				84D58979221A914200365EEC /* Podfile */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +155,7 @@
 				84D58943221A82E000365EEC /* Sources */,
 				84D58944221A82E000365EEC /* Frameworks */,
 				84D58945221A82E000365EEC /* Resources */,
+				84D58981221A942500365EEC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -251,13 +272,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		84D58981221A942500365EEC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84D58943221A82E000365EEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D5894D221A82E000365EEC /* ViewController.swift in Sources */,
 				84D5894B221A82E000365EEC /* AppDelegate.swift in Sources */,
+				84D58983221A9B1400365EEC /* ArticleListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +477,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8D799H7U9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Qiita_Client/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +499,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8D799H7U9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Qiita_Client/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
