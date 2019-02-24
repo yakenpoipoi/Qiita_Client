@@ -16,6 +16,7 @@
 		84D5897F221A941500365EEC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D5897D221A941500365EEC /* Alamofire.framework */; };
 		84D58980221A941500365EEC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D5897E221A941500365EEC /* SwiftyJSON.framework */; };
 		84D58983221A9B1400365EEC /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D58982221A9B1400365EEC /* ArticleListViewController.swift */; };
+		84D589C52222DC1800365EEC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D589C42222DC1800365EEC /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		84D5897D221A941500365EEC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		84D5897E221A941500365EEC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		84D58982221A9B1400365EEC /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
+		84D589C42222DC1800365EEC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				84D5894A221A82E000365EEC /* AppDelegate.swift */,
+				84D589C42222DC1800365EEC /* TableViewCell.swift */,
 				84D5894E221A82E000365EEC /* Main.storyboard */,
 				84D58951221A82E200365EEC /* Assets.xcassets */,
 				84D58953221A82E200365EEC /* LaunchScreen.storyboard */,
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D589C52222DC1800365EEC /* TableViewCell.swift in Sources */,
 				84D5894B221A82E000365EEC /* AppDelegate.swift in Sources */,
 				84D58983221A9B1400365EEC /* ArticleListViewController.swift in Sources */,
 			);
